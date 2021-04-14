@@ -10,11 +10,13 @@
     --color-grey: #616161;
     --color-ligth-grey: #7c7979;
     --color-blue: #73aace;
+    --color-ligth-blue: #c5cae9;
     --color-yellow: #fff7d1;
     --color-orange: #fed546;
     --color-red: #d50000;
     --color-dark-red: #9b0000;
     --color-ligth-red: #ff5131;
+    --color-ligth-pink: #fce4ec;
     
     /* Font Size */
     --font-large: 48px;
@@ -230,7 +232,7 @@ p{
 
 /* Skille */
 #skills {
-    background-color: var(--color-yellow);
+    background-color: var(--color-ligth-pink);
 }
 
 .skillset {
