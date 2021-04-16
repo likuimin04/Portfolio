@@ -10,8 +10,10 @@
     --color-dark-grey: #4d4d4d;
     --color-grey: #616161;
     --color-ligth-grey: #7c7979;
+    --color-ligth-grey2: #eeeeee;
     --color-blue: #73aace;
     --color-ligth-blue: #c5cae9;
+    --color-ligth-blue2: #eceff1;
     --color-yellow: #fff7d1;
     --color-orange: #fed546;
     --color-red: #d50000;
@@ -234,7 +236,7 @@ p{
 
 /* Skille */
 #skills {
-    background-color: var(--color-ligth-pink);
+    background-color: var(--color-ligth-blue2);
 }
 
 .skillset {
@@ -384,6 +386,9 @@ p{
 }
 
 /* Academy */
+#academy {
+    background-color: var(--color-ligth-blue2);
+}
 .academy__category {
     display: flex;
     flex-wrap: wrap;
