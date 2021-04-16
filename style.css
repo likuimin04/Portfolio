@@ -184,6 +184,10 @@ p{
     border-radius: var(--size-border-radius);
 }
 
+.home__contact:hover {
+    background-color: var(--color-blue);
+}
+
 /* Section common */
 .section {
     padding: 50px;
@@ -576,6 +580,14 @@ p{
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
+    :root {
+        /* Font Size */
+        --font-large: 30px;
+        --font-medium: 18px;
+        --font-regular: 16px;
+        --font-small: 14px;
+        --font-micro: 12px;
+    }
     .navbar__toggle-btn {
         display: block;
     }
@@ -600,12 +612,18 @@ p{
         display: block;
     }
 
+    .section {
+        padding: 16px;
+    }
+
     .about__majors {
         flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 0px;
     }
 
     .major {
-        margin: 38px;
+        margin: 30px;
     }
 
     .skillset {
@@ -627,5 +645,14 @@ p{
 
     .academy__category {
         flex-direction: column;
+    }
+
+    .arrow-up {
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+        line-height: 30px;
+        right: 16px;
+        bottom: 16px;
     }
 }
