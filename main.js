@@ -60,6 +60,13 @@ arrowUp.addEventListener('click', () => {
     if(filter == null) {
         return;
     }
+
+    // border 실시간 이동 가능하게 설정
+    const active = document.querySelector('.category__btn.selected');
+    active.classList.remove('selected');
+    const target = e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
+    target.classList.add('selected');
+
     projectContainer.classList.add('anim-out');
     setTimeout(() => {
         projects.forEach((project) => {
@@ -82,6 +89,13 @@ arrowUp.addEventListener('click', () => {
     if(filter == null) {
         return;
     }
+
+    // border 실시간 이동 가능하게 설정
+    const active = document.querySelector('.academy__btn.selected');
+    active.classList.remove('selected');
+    const target = a.target.nodeName === 'BUTTON' ? a.target : a.target.parentNode;
+    target.classList.add('selected');
+
     academyContainer.classList.add('anim-out');
     setTimeout(() => {
         vowels.forEach((Vowel) => {
