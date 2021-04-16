@@ -36,6 +36,20 @@ document.addEventListener('scroll', () => {
     home.style.opacity = 1 - window.scrollY / homeHeight;
 });
 
+// 위로가기 버튼 활성화
+const arrowUp =document.querySelector('.arrow-up');
+document.addEventListener('scroll', () => {
+    if(window.scrollY > homeHeight /2) {
+        arrowUp.classList.add('visible');
+    } else {
+        arrowUp.classList.remove('visible');
+    }
+});
+
+// 위로가기 버튼 클릭 시 맨 위로 가게 이벤트 활성화
+arrowUp.addEventListener('click', () => {
+    scrollIntoView('#home');
+});
 
 
 
